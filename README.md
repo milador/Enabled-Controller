@@ -31,6 +31,10 @@ Assembled:
 <img align="center" src="https://github.com/milador/Enabled-Controller/blob/master/Resources/enabled_controller_assembled.jpg" width="50%" height="50%" alt="Assembled PCB"/>
 </p>
 
+Assembly Animation:
+
+https://www.youtube.com/watch?v=7AMCL-cITrQ
+
 ### Enclosure
 
 Under Construction 
