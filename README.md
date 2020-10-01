@@ -1,5 +1,4 @@
 # Enabled-Controller
-An accessible game controller interface
 
 Enabled-Controller is an open-source game controller interface that enables those with limited or no hand movement to use Adaptive switches as input to operate and perform joystick actions.
 
