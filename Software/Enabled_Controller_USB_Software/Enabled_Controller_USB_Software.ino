@@ -1,5 +1,5 @@
-//Enabled-Controller Software
-//Enabled_Controller_Software
+//Enabled_Controller_USB_Software Software
+//Enabled_Controller_USB_Software
 //Written by: Milad Hajihassan
 //Version 1.0.1 (12/9/2020)
 //Github Link: https://github.com/milador/Enabled-Controller/
