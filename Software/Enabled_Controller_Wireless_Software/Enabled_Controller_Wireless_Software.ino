@@ -1,5 +1,5 @@
-//Enabled_Controller_USB_Software Software
-//Enabled_Controller_USB_Software
+//Enabled_Controller_Wireless_Software Software
+//Enabled_Controller_Wireless_Software
 //Written by: Milad Hajihassan
 //Version 1.0.1 (25/12/2020)
 //Github Link: https://github.com/milador/Enabled-Controller/
