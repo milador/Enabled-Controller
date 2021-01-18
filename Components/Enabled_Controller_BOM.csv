@@ -1,12 +1,11 @@
 ﻿Index,Quantity,Digikey Part Number,Manufacturer Part Number,Description,Price (CAD),Unit Price (CAD),Link
 1,1,1528-4481-ND,4481,"	ITSYBITSY NRF52840 EXPRESS BLE",25.4,25.4,https://www.digikey.ca/en/products/detail/adafruit-industries-llc/4481/11497502
-2,1,1568-1213-ND,COM-12986,ADDRESS LED DISC SER RGB 5MM 5PC,4.26,0.852,https://www.digikey.ca/en/products/detail/COM-12986/1568-1213-ND/5673799
-3,2,S7047-ND,"	PPPC141LFBN-RC",CONN HDR 14POS 0.1 GOLD,1.37,1.37,https://www.digikey.ca/en/products/detail/PPPC141LFBN-RC/S7047-ND/810186
-4,8,CP1-3535NG-ND,"	SJ1-3535NG",CONN JACK STEREO 3.5MM R/A,1.72,1.72,https://www.digikey.ca/product-detail/en/cui-inc/SJ1-3535NG/CP1-3535NG-ND
-5,2,CP-43514-ND,SJ-43514,CONN JACK 4COND 3.5MM,1.53,1.53,https://www.digikey.ca/en/products/detail/SJ-43514/CP-43514-ND/368146
-6,2,36-4701-ND,4701,"	
-HEX NUT 0.245"" STEEL 6-32",0.15,0.15,https://www.digikey.ca/en/products/detail/keystone-electronics/4701/316272
+2,1,1568-1213-ND,COM-12986,ADDRESS LED DISC SER RGB 5MM 5PC,4.08,0.816,https://www.digikey.ca/en/products/detail/COM-12986/1568-1213-ND/5673799
+3,2,S7047-ND,PPPC141LFBN-RC,CONN HDR 14POS 0.1 GOLD,1.32,1.32,https://www.digikey.ca/en/products/detail/PPPC141LFBN-RC/S7047-ND/810186
+4,8,CP1-3535NG-ND,"	SJ1-3535NG",CONN JACK STEREO 3.5MM R/A,1.65,1.65,https://www.digikey.ca/product-detail/en/cui-inc/SJ1-3535NG/CP1-3535NG-ND
+5,2,CP-43514-ND,SJ-43514,CONN JACK 4COND 3.5MM,1.47,1.47,https://www.digikey.ca/en/products/detail/SJ-43514/CP-43514-ND/368146
+6,2,36-4701-ND,4701,"HEX NUT 0.245"" STEEL 6-32",0.15,0.15,https://www.digikey.ca/en/products/detail/keystone-electronics/4701/316272
 7,2,36-9309-ND,9309,MACH SCREW PAN HEAD SLOTTED 6-32,0.15,0.15,https://www.digikey.ca/en/products/detail/keystone-electronics/9309/2746088
 ,,,,,,,
 ,,,,,,,
-,,,,,Total Price (CAD),49.82,
+,,,,,Total Price (CAD),48.86,
