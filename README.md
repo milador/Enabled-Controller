@@ -10,15 +10,23 @@ The device offers up to eight switch input enclosures through eight 3.5mm audio 
 
 The internal RGB led of ItsyBitsy and external NeoPixel is used to provide visual feedback for each action.
 
+## Assembly Instructions Manual
+
+The <a href="https://github.com/milador/Enabled-Controller/blob/main/Documentation/Build_Manuals/Enabled_Controller_Instructions_Manual.pdf">Assembly Instructions Manual</a> is available to download.
+
+## Parts
+
+The <a href="https://github.com/milador/Enabled-Controller/blob/main/Components/Enabled_Controller_BOM.csv">BOM</a> file is available to download.
+
 ## Software
 
-The first experimental software is available to use but it's not stable and needs more testing.
+The first experimental software is under testing.
 
 ## Hardware 
 
 ### PCB Design 
 
-The PCB Eagle files are available to download and you can generate your own gerber files using these files.
+The <a href="https://github.com/milador/Enabled-Controller/tree/main/Hardware/PCB">PCB files</a> including both PCB Eagle design files and generated gerber files are available to download.
 
 Front PCB:
 <p align="center">
@@ -40,6 +48,8 @@ Assembly Animation:
 https://www.youtube.com/watch?v=7AMCL-cITrQ
 
 ### Enclosure
+
+The <a href="https://github.com/milador/Enabled-Controller/tree/main/Hardware/Enclosure">Enclosure files</a> including both STL and STEP enclosure files are available to download.
 
 <p align="center">
 <img align="center" src="https://raw.githubusercontent.com/milador/Enabled-Controller/master/Resources/Images/Enabled-Controller.png" width="50%" height="50%" alt="Enabled Controller"/>
