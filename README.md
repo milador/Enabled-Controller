@@ -12,11 +12,11 @@ The internal RGB led of ItsyBitsy and external NeoPixel is used to provide visua
 
 ## Assembly Instructions Manual
 
-The <a href="https://github.com/milador/Enabled-Controller/blob/main/Documentation/Build_Manuals/Enabled_Controller_Instructions_Manual.pdf">Assembly Instructions Manual</a> is available to download.
+The <a href="https://github.com/milador/Enabled-Controller/blob/master/Documentation/Build_Manuals/Enabled_Controller_Instructions_Manual.pdf">Assembly Instructions Manual</a> is available to download.
 
 ## Parts
 
-The <a href="https://github.com/milador/Enabled-Controller/blob/main/Components/Enabled_Controller_BOM.csv">BOM</a> file is available to download.
+The <a href="https://github.com/milador/Enabled-Controller/blob/master/Components/Enabled_Controller_BOM.csv">BOM</a> file is available to download.
 
 ## Software
 
@@ -26,7 +26,7 @@ The first experimental software is under testing.
 
 ### PCB Design 
 
-The <a href="https://github.com/milador/Enabled-Controller/tree/main/Hardware/PCB">PCB files</a> including both PCB Eagle design files and generated gerber files are available to download.
+The <a href="https://github.com/milador/Enabled-Controller/tree/master/Hardware/PCB">PCB files</a> including both PCB Eagle design files and generated gerber files are available to download.
 
 Front PCB:
 <p align="center">
@@ -49,7 +49,7 @@ https://www.youtube.com/watch?v=7AMCL-cITrQ
 
 ### Enclosure
 
-The <a href="https://github.com/milador/Enabled-Controller/tree/main/Hardware/Enclosure">Enclosure files</a> including both STL and STEP enclosure files are available to download.
+The <a href="https://github.com/milador/Enabled-Controller/tree/master/Hardware/Enclosure">Enclosure files</a> including both STL and STEP enclosure files are available to download.
 
 <p align="center">
 <img align="center" src="https://raw.githubusercontent.com/milador/Enabled-Controller/master/Resources/Images/Enabled-Controller.png" width="50%" height="50%" alt="Enabled Controller"/>
