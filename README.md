@@ -14,13 +14,29 @@ The internal RGB led of ItsyBitsy and external NeoPixel is used to provide visua
 
 The <a href="https://github.com/milador/Enabled-Controller/blob/master/Documentation/Build_Manuals/Enabled_Controller_Instructions_Manual.pdf">Assembly Instructions Manual</a> is available to download.
 
+## User Manual
+
+### Enabled Controller USB User Manual
+
+<a href="https://github.com/milador/Enabled-Controller/blob/master/Documentation/User_Manuals/Enabled_Controller_USB_User_Manual.pdf">Enabled_Controller_USB_User_Manual.pdf</a>
+
+### Enabled Controller Joystick User Manual 
+
+<a href="https://github.com/milador/Enabled-Controller/blob/master/Documentation/User_Manuals/Enabled_Controller_Joystick_User_Manual.pdf">Enabled_Controller_Joystick_User_Manual.pdf</a>
+
 ## Parts
 
 The <a href="https://github.com/milador/Enabled-Controller/blob/master/Components/Enabled_Controller_BOM.csv">BOM</a> file is available to download.
 
 ## Software
 
-The first experimental software is under testing.
+### Enabled_Controller_USB_Software.ino  
+
+The <a href="https://raw.githubusercontent.com/milador/Enabled-Controller/master/Software/Arduino/Enabled_Controller_USB_Software/Enabled_Controller_USB_Software.ino">Enabled_Controller_USB_Software.ino</a> allows you to use adaptive switches as input method via keyboard/mouse HID profiles. 
+
+### Enabled_Controller_Joystick_Software.ino  
+
+The <a href="https://raw.githubusercontent.com/milador/Enabled-Controller/master/Software/Arduino/Enabled_Controller_Joystick_Software/Enabled_Controller_Joystick_Software.ino">Enabled_Controller_Joystick_Software.ino</a> allows you to use adaptive switches as input method via joystick HID profiles. 
 
 ## Hardware 
 
