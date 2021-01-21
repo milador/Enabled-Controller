@@ -13,6 +13,7 @@
 #include "EasyMorse.h"
 #include <math.h>
 #include <Adafruit_NeoPixel.h>
+#include <Adafruit_DotStar.h>
 #include <FlashStorage.h>
 
 
@@ -28,7 +29,9 @@
 
 
 //Define Switch pins
-#define LED_PIN 12
+#define LED_PIN 5
+#define DOTSTAR_DATA_PIN    41
+#define DOTSTAR_CLOCK_PIN   40
 
 #define SWITCH_A_PIN 10
 #define SWITCH_B_PIN 11
@@ -162,6 +165,8 @@ const modeStruct modeProperty[] {
 
 //Setup NeoPixel LED
 Adafruit_NeoPixel ledPixels = Adafruit_NeoPixel(1, LED_PIN, NEO_GRB + NEO_KHZ800);
+Adafruit_DotStar dotStar(1, DOTSTAR_DATA_PIN, DOTSTAR_CLOCK_PIN, DOTSTAR_BRG);
+
 
 void setup() {
 
@@ -235,7 +240,7 @@ void loop() {
     if (timePressed >= SWITCH_MODE_CHANGE_TIME){
       changeSwitchMode();                                                                
     } else if(switchMode==1) {
-      keyboardAction(switchAState,switchBState,switchCState,LOW);
+      keyboardAction(switchAState,switchBState,switchCState,LOW,switchUpState,switchRightState,switchDownState,switchLeftState);
     }
   }
   //Serial.println(switchAState);
@@ -281,10 +286,16 @@ void setLedBlink(int numBlinks, int delayBlinks, int ledColor,uint8_t ledBrightn
   if (numBlinks < 0) numBlinks *= -1;
 
       for (int i = 0; i < numBlinks; i++) {
+        dotStar.setPixelColor(0, dotStar.Color(colorProperty[ledColor-1].colorCode.g,colorProperty[ledColor-1].colorCode.r,colorProperty[ledColor-1].colorCode.b));
+        dotStar.setBrightness(ledBrightness);
+        dotStar.show(); 
         ledPixels.setPixelColor(0, ledPixels.Color(colorProperty[ledColor-1].colorCode.g,colorProperty[ledColor-1].colorCode.r,colorProperty[ledColor-1].colorCode.b));
         ledPixels.setBrightness(ledBrightness);
         ledPixels.show(); 
         delay(delayBlinks);
+        dotStar.setPixelColor(0, dotStar.Color(0,0,0));
+        ledPixels.setBrightness(ledBrightness);
+        dotStar.show();   
         ledPixels.setPixelColor(0, ledPixels.Color(0,0,0));
         ledPixels.setBrightness(ledBrightness);
         ledPixels.show(); 
@@ -295,6 +306,9 @@ void setLedBlink(int numBlinks, int delayBlinks, int ledColor,uint8_t ledBrightn
 //***UPDATE RGB LED COLOR FUNCTION***//
 
 void updateLedColor(int ledColor, uint8_t ledBrightness) {
+    dotStar.setPixelColor(0, dotStar.Color(colorProperty[ledColor-1].colorCode.g,colorProperty[ledColor-1].colorCode.r,colorProperty[ledColor-1].colorCode.b));
+    dotStar.setBrightness(ledBrightness);
+    dotStar.show();
     ledPixels.setPixelColor(0, ledPixels.Color(colorProperty[ledColor-1].colorCode.g,colorProperty[ledColor-1].colorCode.r,colorProperty[ledColor-1].colorCode.b));
     ledPixels.setBrightness(ledBrightness);
     ledPixels.show();
@@ -306,6 +320,7 @@ uint32_t getLedColor(int ledModeNumber) {
 
   int colorNumber= modeProperty[ledModeNumber-1].modeColorNumber-1;
   
+  //return (dotStar.Color(colorProperty[colorNumber].colorCode.g,colorProperty[colorNumber].colorCode.r,colorProperty[colorNumber].colorCode.b));
   return (ledPixels.Color(colorProperty[colorNumber].colorCode.g,colorProperty[colorNumber].colorCode.r,colorProperty[colorNumber].colorCode.b));
 }
 
@@ -318,6 +333,10 @@ uint8_t getLedBrightness() {
 //***SET RGB LED COLOR FUNCTION***//
 
 void setLedColor (uint32_t ledColor, uint8_t ledBrightness){
+  dotStar.setPixelColor(0, ledColor);
+  dotStar.setBrightness(ledBrightness);
+  dotStar.show(); 
+    
   ledPixels.setPixelColor(0, ledColor);
   ledPixels.setBrightness(ledBrightness);
   ledPixels.show(); 
@@ -334,9 +353,13 @@ void setLedBrightness(uint8_t ledBrightness) {
 //***CLEAR RGB LED FUNCTION***//
 
 void ledClear() {
+  dotStar.setPixelColor(0, dotStar.Color(0,0,0));
+  dotStar.show(); 
   ledPixels.setPixelColor(0, ledPixels.Color(0,0,0));
   ledPixels.show(); 
 }
+
+//***SWITCH FEEDBACK FUNCTION***//
 
 void switchFeedback(int switchNumber,int modeNumber,int delayTime, int blinkNumber =1)
 {

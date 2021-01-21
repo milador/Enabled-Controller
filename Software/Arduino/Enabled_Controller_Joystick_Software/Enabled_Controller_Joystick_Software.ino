@@ -191,8 +191,6 @@ void setup() {
 };
 
 void loop() {
-  
-  
   //Perform joystick actions based on the mode
   joystickAction(switchMode);
   dotStar.show(); 
