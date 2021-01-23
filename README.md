@@ -1,6 +1,6 @@
 # Enabled Controller
 
-Enabled Controller is an open-source switch controller interface that enables those with limited or no hand movement to use Adaptive switches as input to operate and perform joystick actions.
+Enabled Controller is an open-source switch controller interface that enables those with limited or no hand movement to use Adaptive switches and analog joysticks in one device as inputs.
 
 <p align="center">
 <img align="center" src="https://raw.githubusercontent.com/milador/Enabled-Controller/master/Resources/Images/Enabled-Controller.png" width="50%" height="50%" alt="Enabled Controller"/>
