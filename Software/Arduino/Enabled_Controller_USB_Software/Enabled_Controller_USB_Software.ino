@@ -3,7 +3,7 @@
  * File Name: Enabled_Controller_USB_Software.ino 
  * Title: Enabled Controller Mini USB Software
  * Developed by: Milad Hajihassan
- * Version Number: 1.1 (20/1/2021)
+ * Version Number: 1.1 (24/1/2021)
  * Github Link: https://github.com/milador/Enabled_Controller
  ***************************************************************************/
 
@@ -17,7 +17,8 @@
 #include <FlashStorage.h>
 
 
-//Can be changed based on the needs of the users 
+//Can be changed based on the needs of the users
+#define OS_PROFILE  1                                                 //Windows & Android = 1 , macOS = 2                                                  
 #define MORSE_TIMEOUT 1000                                            //Maximum timeout (1000ms =1s)
 #define MORSE_REACTION_TIME 10                                        //Minimum time for a dot or dash switch action ( level 10 : (1.5^1)x10 =15ms , level 1 : (1.5^10)x10=570ms )
 #define MOUSE_MOVE_MULTI 2                                            //Morse mouse move multiplier 
@@ -135,16 +136,30 @@ const colorStruct colorProperty[] {
 };
 
 //Switch properties 
+#if (OS_PROFILE == 1)
 const switchStruct switchProperty[] {
     {1,"DOT",'a',5,1},                             //{1=dot,"DOT",'a',5=blue,1=1xMORSE_REACTION}
     {2,"DASH",'b',6,3},                            //{2=dash,"DASH",'b',6=red,3=3xMORSE_REACTION}
     {3,"C",'c',1,1},                               //{3,"C",'c',1=green,1=1xMORSE_REACTION}
     {4,"D",'d',3,1},                               //{4,"D",'d',3=yellow,1=1xMORSE_REACTION}
-    {5,"UP",'e',3,1},                              //{5,"UP",'e',3=yellow,1=1xMORSE_REACTION}
-    {6,"RIGHT",'f',3,1},                           //{6,"RIGHT",'f',3=yellow,1=1xMORSE_REACTION}
-    {7,"DOWN",'g',3,1},                            //{7,"DOWN",'g',3=yellow,1=1xMORSE_REACTION}
-    {8,"LEFT",'h',3,1}                             //{8,"LEFT",'h',3=yellow,1=1xMORSE_REACTION}
+    {5,"UP",KEY_UP_ARROW,3,1},                     //{5,"UP",KEY_UP_ARROW,3=yellow,1=1xMORSE_REACTION}
+    {6,"RIGHT",KEY_RIGHT_ARROW,3,1},               //{6,"RIGHT",KEY_RIGHT_ARROW,3=yellow,1=1xMORSE_REACTION}
+    {7,"DOWN",KEY_DOWN_ARROW,3,1},                 //{7,"DOWN",KEY_DOWN_ARROW,3=yellow,1=1xMORSE_REACTION}
+    {8,"LEFT",KEY_LEFT_ARROW,3,1}                  //{8,"LEFT",KEY_LEFT_ARROW,3=yellow,1=1xMORSE_REACTION}
 };
+#else if (OS_PROFILE == 2)
+const switchStruct switchProperty[] {
+    {1,"DOT",KEY_F1,5,1},                             //{1=dot,"DOT",KEY_F1,5=blue,1=1xMORSE_REACTION}
+    {2,"DASH",KEY_F2,6,3},                            //{2=dash,"DASH",KEY_F2,6=red,3=3xMORSE_REACTION}
+    {3,"C",KEY_F3,1,1},                               //{3,"C",KEY_F3,1=green,1=1xMORSE_REACTION}
+    {4,"D",KEY_F4,3,1},                               //{4,"D",KEY_F4,3=yellow,1=1xMORSE_REACTION}
+    {5,"UP",KEY_F5,3,1},                              //{5,"UP",KEY_F5,3=yellow,1=1xMORSE_REACTION}
+    {6,"RIGHT",KEY_F6,3,1},                           //{6,"RIGHT",KEY_F6,3=yellow,1=1xMORSE_REACTION}
+    {7,"DOWN",KEY_F7,3,1},                            //{7,"DOWN",KEY_F7,3=yellow,1=1xMORSE_REACTION}
+    {8,"LEFT",KEY_F8,3,1}                             //{8,"LEFT",KEY_F8,3=yellow,1=1xMORSE_REACTION}
+};
+#endif
+
 
 //Settings Action properties 
 const settingsActionStruct settingsProperty[] {
@@ -271,7 +286,7 @@ void displayFeatureList(void) {
   Serial.println(" --- ");
   Serial.println("Enabled Controller USB firmware");
   Serial.println(" ");
-  Serial.println("VERSION: 1.1 (20 January 2021)");
+  Serial.println("VERSION: 1.1 (24 January 2021)");
   Serial.println(" ");
   Serial.println(" --- ");
   Serial.println("Features: Adaptive switch, Morse Keyboard, Morse Mouse");
