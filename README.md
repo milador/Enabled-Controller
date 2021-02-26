@@ -70,3 +70,18 @@ The <a href="https://github.com/milador/Enabled-Controller/tree/master/Hardware/
 <p align="center">
 <img align="center" src="https://raw.githubusercontent.com/milador/Enabled-Controller/master/Resources/Images/Enabled-Controller.png" width="50%" height="50%" alt="Enabled Controller"/>
 </p>
+
+## License
+
+### Creative Commons Attribution-NonCommercial-ShareAlike (CC-BY-NC-SA)
+
+Copyright (c) 2020 Milador
+
+A creative commons license that bans commercial use and requires you to release any modified works under this license.
+
+<p align="center">
+<img align="center" src="https://raw.githubusercontent.com/milador/milador/master/Assets/IMG/Cc-by-nc-sa_license_icon.png" width="50%" height="50%" alt="CC-BY-NC-SA"/>
+</p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
+
