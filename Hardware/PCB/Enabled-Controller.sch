@@ -1155,36 +1155,6 @@ Pins are staggered 0.005" off center to lock pins while soldering.
 <text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
-<package name="HEADER_FEMALE-1X02" urn="urn:adsk.eagle:footprint:27250084/1" library_version="51">
-<description>&lt;h3&gt;Plated Through Hole&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:2&lt;/li&gt;
-&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-</package>
 <package name="MILADOR_LOGO1" urn="urn:adsk.eagle:footprint:28431734/1" library_version="51">
 <rectangle x1="-5.2705" y1="-0.0381" x2="-5.1435" y2="-0.0127" layer="21"/>
 <rectangle x1="0.1905" y1="-0.0381" x2="0.3429" y2="-0.0127" layer="21"/>
@@ -1888,19 +1858,6 @@ Pins are staggered 0.005" off center to lock pins while soldering.
 <packageinstance name="HEADER_FEMALE-1X03_LONGER"/>
 </packageinstances>
 </package3d>
-<package3d name="PINHEAD_1X02" urn="urn:adsk.eagle:package:27250301/1" type="model" library_version="51">
-<description>&lt;h3&gt;Plated Through Hole&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:2&lt;/li&gt;
-&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="HEADER_FEMALE-1X02"/>
-</packageinstances>
-</package3d>
 <package3d name="MILADOR_LOGO1" urn="urn:adsk.eagle:package:28431737/1" type="empty" library_version="51">
 <packageinstances>
 <packageinstance name="MILADOR_LOGO1"/>
@@ -1918,16 +1875,6 @@ Pins are staggered 0.005" off center to lock pins while soldering.
 <pin name="3" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
 <text x="-6.35" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="PINHD1X02-1" urn="urn:adsk.eagle:symbol:27249954/1" library_version="51">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 <symbol name="MILADOR_LOGO" urn="urn:adsk.eagle:symbol:28431731/1" library_version="51">
 <wire x1="-15.24" y1="7.62" x2="15.24" y2="7.62" width="0.2032" layer="94"/>
@@ -1953,25 +1900,6 @@ Pins are staggered 0.005" off center to lock pins while soldering.
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:27250310/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="HEADER_FEMALE-1X2" urn="urn:adsk.eagle:component:27250490/1" library_version="51">
-<gates>
-<gate name="G$1" symbol="PINHD1X02-1" x="1.27" y="-1.27"/>
-</gates>
-<devices>
-<device name="" package="HEADER_FEMALE-1X02">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:27250301/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2055,8 +1983,7 @@ Pins are staggered 0.005" off center to lock pins while soldering.
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="J1" library="milador" library_urn="urn:adsk.eagle:library:12595918" deviceset="HEADER_FEMALE-1X3-LONGER" device="" package3d_urn="urn:adsk.eagle:package:27250310/1"/>
-<part name="J2" library="milador" library_urn="urn:adsk.eagle:library:12595918" deviceset="HEADER_FEMALE-1X2" device="" package3d_urn="urn:adsk.eagle:package:27250301/1"/>
-<part name="U$1" library="milador" library_urn="urn:adsk.eagle:library:12595918" deviceset="MILADOR-LOGO-" device="" package3d_urn="urn:adsk.eagle:package:28431737/1"/>
+<part name="LABEL1" library="milador" library_urn="urn:adsk.eagle:library:12595918" deviceset="MILADOR-LOGO-" device="" package3d_urn="urn:adsk.eagle:package:28431737/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -2174,10 +2101,7 @@ Pins are staggered 0.005" off center to lock pins while soldering.
 <attribute name="NAME" x="97.79" y="19.685" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="97.79" y="33.02" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="J2" gate="G$1" x="91.44" y="-1.27" smashed="yes" rot="R180">
-<attribute name="NAME" x="97.79" y="-6.985" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="U$1" gate="G$1" x="33.02" y="157.48" smashed="yes"/>
+<instance part="LABEL1" gate="G$1" x="33.02" y="157.48" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -2188,6 +2112,9 @@ Pins are staggered 0.005" off center to lock pins while soldering.
 <pinref part="U1" gate="G$1" pin="P_GND"/>
 <wire x1="110.49" y1="20.4" x2="110.49" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="110.49" y1="25.4" x2="127" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="J1" gate="A" pin="2"/>
+<wire x1="93.98" y1="25.4" x2="110.49" y2="25.4" width="0.1524" layer="91"/>
+<junction x="110.49" y="25.4"/>
 </segment>
 <segment>
 <pinref part="LED" gate="G$1" pin="VSS"/>
@@ -2203,12 +2130,22 @@ Pins are staggered 0.005" off center to lock pins while soldering.
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="22.86" y1="25.4" x2="22.86" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="SW_A" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="40.64" x2="12.7" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="40.64" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="SW_A" gate="G$1" pin="3"/>
+<wire x1="15.24" y1="40.64" x2="12.7" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="43.18" x2="15.24" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="43.18" x2="15.24" y2="40.64" width="0.1524" layer="91"/>
+<junction x="15.24" y="40.64"/>
 </segment>
 <segment>
 <pinref part="SW_LEFT" gate="G$1" pin="1"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="299.72" y1="63.5" x2="294.64" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="63.5" x2="297.18" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="SW_LEFT" gate="G$1" pin="3"/>
+<wire x1="297.18" y1="63.5" x2="294.64" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="60.96" x2="297.18" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="60.96" x2="297.18" y2="63.5" width="0.1524" layer="91"/>
+<junction x="297.18" y="63.5"/>
 </segment>
 <segment>
 <pinref part="SW_AN2" gate="G$1" pin="RING2"/>
@@ -2225,36 +2162,66 @@ Pins are staggered 0.005" off center to lock pins while soldering.
 <segment>
 <pinref part="SW_RIGHT" gate="G$1" pin="1"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="12.7" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="68.58" x2="16.51" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="SW_RIGHT" gate="G$1" pin="3"/>
+<wire x1="16.51" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="66.04" x2="16.51" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="16.51" y1="66.04" x2="16.51" y2="68.58" width="0.1524" layer="91"/>
+<junction x="16.51" y="68.58"/>
 </segment>
 <segment>
 <pinref part="SW_DOWN" gate="G$1" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="299.72" y1="88.9" x2="287.02" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="88.9" x2="297.18" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="SW_DOWN" gate="G$1" pin="3"/>
+<wire x1="297.18" y1="88.9" x2="287.02" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="86.36" x2="297.18" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="86.36" x2="297.18" y2="88.9" width="0.1524" layer="91"/>
+<junction x="297.18" y="88.9"/>
 </segment>
 <segment>
 <pinref part="SW_B" gate="G$1" pin="1"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="53.34" y1="27.94" x2="58.42" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="27.94" x2="55.88" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="27.94" x2="58.42" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="27.94" x2="58.42" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="SW_B" gate="G$1" pin="3"/>
+<wire x1="53.34" y1="30.48" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="30.48" x2="55.88" y2="27.94" width="0.1524" layer="91"/>
+<junction x="55.88" y="27.94"/>
 </segment>
 <segment>
 <pinref part="SW_C" gate="G$1" pin="1"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="53.34" y1="0" x2="60.96" y2="0" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="0" x2="55.88" y2="0" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="0" x2="60.96" y2="0" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="0" x2="60.96" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="SW_C" gate="G$1" pin="3"/>
+<wire x1="53.34" y1="2.54" x2="55.88" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="2.54" x2="55.88" y2="0" width="0.1524" layer="91"/>
+<junction x="55.88" y="0"/>
 </segment>
 <segment>
 <pinref part="SW_D" gate="G$1" pin="1"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="53.34" y1="-22.86" x2="60.96" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-22.86" x2="55.88" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-22.86" x2="60.96" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="-22.86" x2="60.96" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="SW_D" gate="G$1" pin="3"/>
+<wire x1="53.34" y1="-20.32" x2="55.88" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-20.32" x2="55.88" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="55.88" y="-22.86"/>
 </segment>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="SW_UP" gate="G$1" pin="1"/>
 <wire x1="54.102" y1="64.77" x2="54.102" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="54.102" y1="68.58" x2="50.546" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="54.102" y1="68.58" x2="52.07" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="SW_UP" gate="G$1" pin="3"/>
+<wire x1="52.07" y1="68.58" x2="50.546" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="50.546" y1="71.12" x2="52.07" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="52.07" y1="71.12" x2="52.07" y2="68.58" width="0.1524" layer="91"/>
+<junction x="52.07" y="68.58"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="1"/>
@@ -2444,15 +2411,6 @@ Pins are staggered 0.005" off center to lock pins while soldering.
 <wire x1="120.65" y1="10.16" x2="120.65" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="P_BAT"/>
 <wire x1="120.65" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="93.98" y1="-1.27" x2="99.06" y2="-1.27" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="-1.27" x2="99.06" y2="-3.81" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="-3.81" x2="93.98" y2="-3.81" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
