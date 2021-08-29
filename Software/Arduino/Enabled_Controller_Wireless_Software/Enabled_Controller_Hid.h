@@ -62,7 +62,6 @@ void bluetoothSetup(){
   
 }
 
-
 //***ENTER KEYBOARD ACTIONS FUNCTION***//
 
 void enterKeyboard(uint8_t modifierCode, uint8_t keyCode) {

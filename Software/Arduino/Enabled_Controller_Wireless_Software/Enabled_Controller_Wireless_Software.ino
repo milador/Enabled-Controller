@@ -32,7 +32,8 @@ using namespace Adafruit_LittleFS_Namespace;
 #define SWITCH_MODE_CHANGE_TIME 2000                                  //How long to hold switch D to change mode 
 #define SWITCH_MAC_PROFILE false                                      //Windows,Android,iOS=false MacOS=true 
 
-#define LED_BRIGHTNESS 150                                             //The mode led color brightness which is always on ( Use a low value to decrease power usage )
+#define LED_BRIGHTNESS 150                                             //The default led color brightness which is always on
+#define LED_LP_BRIGHTNESS 4                                            //The low power mode led color brightness
 #define LED_ACTION_BRIGHTNESS 150                                      //The action led color brightness which can be a higher value than LED_BRIGHTNESS
 
 //Define Switch pins
@@ -231,13 +232,21 @@ void setup() {
   pinMode(SWITCH_LEFT_PIN, INPUT_PULLUP);  
   
   //Initialize the LED pin as an output
-  pinMode(LED_PIN_EXT, OUTPUT);                                                      
-
+  pinMode(LED_PIN_EXT, OUTPUT);   
 
 };
 
 void loop() {
-  
+  //Skip if not connected
+  if (!Bluefruit.connected()) 
+  {
+    //Enter low power mode
+    waitForEvent();
+    setLedBrightness(LED_LP_BRIGHTNESS);
+    return;
+  }
+
+  setLedBrightness(LED_BRIGHTNESS);
   static int ctr;                          //Control variable to set previous status of switches 
   unsigned long timePressed;               //Time that switch one or two are pressed
   unsigned long timeNotPressed;            //Time that switch one or two are not pressed
@@ -642,7 +651,7 @@ void mouseAction(int switch1,int switch2,int switch3,int switch4,int switch5,int
 //***MORSE CODE TO MOUSE CONVERT FUNCTION***//
 
 void morseAction(int mode,int switch1,int switch2) {
-  int i, j;
+  int i;
   static int ctr;
   unsigned long timePressed;
   unsigned long timeNotPressed;
