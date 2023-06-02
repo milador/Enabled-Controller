@@ -255,15 +255,17 @@ void loop() {
   
     if (switchCState == LOW){                                          // Switch C was pressed
       if (previousSwitchCState == LOW) { 
-        mouseMoverAction(switchProperty[2].switchMouse,false,MOUSE_MOVER_XY,MOUSE_MOVER_XY);
+        moverState[2]=true;
+        mouseMoverAction(switchProperty[2].switchMouse,moverState[2],MOUSE_MOVER_XY,MOUSE_MOVER_XY);
       }
       previousSwitchCState = LOW;
     }
     else if (switchCState == HIGH){                                    // Switch C was released
   
       if (previousSwitchCState == LOW) { 
-        moverState[2]=!moverState[2];
-      }
+        moverState[2]=false;
+        mouseMoverAction(switchProperty[2].switchMouse,moverState[2],MOUSE_MOVER_XY,MOUSE_MOVER_XY);
+      } 
       previousSwitchCState = HIGH;
     }
   
@@ -549,30 +551,42 @@ void mouseMoverAction(int action,bool state, int xValue,int yValue) {
         }    
         break; 
       case 3:
+        if (state){
           if (!Mouse.isPressed(MOUSE_LEFT)) {
             Mouse.press(MOUSE_LEFT);
-            delay(150);
+            delay(300);
             Mouse.release(MOUSE_LEFT);
-          } 
+          }
+        } 
+        else{
+          if (Mouse.isPressed(MOUSE_LEFT)) {
+            Mouse.release(MOUSE_LEFT);
+          }
+        }
+        break;
       case 4:
           if (!Mouse.isPressed(MOUSE_RIGHT)) {
             Mouse.press(MOUSE_RIGHT);
             delay(150);
             Mouse.release(MOUSE_RIGHT);
           }    
-       case 5:
+          break;
+      case 5:
           Mouse.move(0, -yValue, 0);
           delay(10);
-       case 6:
+          break;
+      case 6:
           Mouse.move(xValue, 0, 0);
           delay(10);
-       case 7:
+          break;
+      case 7:
           Mouse.move(0, yValue, 0);
           delay(10);
-       case 8:
+          break;
+      case 8:
           Mouse.move(-xValue, 0, 0);
           delay(10);
-        break;
+          break;
   };
 
 }
